@@ -13,7 +13,8 @@ const API_KEY = process.env.GEMINI_API_KEY;
 
 // 4. 初始化 Gemini 模型
 const genAI = new GoogleGenerativeAI(API_KEY);
-const model = genAI.getGenerativeModel({ model: 'gemini-2.5-pro-latest' });
+// 这是我们需要的最终代码！
+const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash-latest' });
 
 // 5. 这是我们为 Gemini 定制的专家身份提示词 (System Prompt)
 const cssdExpertPrompt = `
